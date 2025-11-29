@@ -27,7 +27,7 @@ nav {
     top: 0;
     height: 80px;
     width: 100%;
-    background-image: url(img/zo6ko26fux871.jpg);
+    background-image: url(../img/zo6ko26fux871.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -74,7 +74,7 @@ nav ul li a {
 
 nav ul li a:hover {
     border-color: rgb(255, 255, 255);
-    background-color: rgba(105, 98, 98, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
