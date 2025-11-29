@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img\favicon.ico" type="image/ico">
+  <title>CRUD Pokédex</title>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="logo"> <a href="index.html"> <img src="img/logo.png" alt=""> </a> </div>
+    <ul id="menu">
+        <li><a href="https://www.poke-blast-news.net/2016/10/muitas-novidades-no-mundo-pokemon.html" target="_blank">PERSONAGENS</a></li>
+        <li><a href="https://www.reddit.com/r/PokeMoonSun/" target="_blank">FÓRUM </a></li>
+        <li><a href="https://lista.mercadolivre.com.br/pokemon-sol-e-lua?matt_tool=82557158&matt_word=Default_URL_MLB&matt_source=bing&matt_campaign=MLB_ML_BING_AO_GEN_X_DSA_ALLB_TXS_ALL&matt_campaign_id=382841304&matt_ad_group=DSA%20-%20All%20Pages&matt_match_type=b&matt_network=o&matt_device=c&matt_keyword=mercadolivre%20com&msclkid=aad98fc1588b10c01626e76af19f10d1&utm_source=bing&utm_medium=cpc&utm_campaign=MLB_ML_BING_AO_GEN_X_DSA_ALLB_TXS_ALL&utm_term=mercadolivre%20com&utm_content=DSA%20-%20All%20Pages" target="_blank">LOJA</a></li>
+    </ul>
+  </nav>
+
+    
+  <div class="container">
+  <h1 id="titulo">CRUD Pokédex</h1>
+
+  <div id="adicao-pokemon">
+   
+
+    <input type="text" id="nome" placeholder="Nome do Pokémon">
+    <input type="number" id="numero" placeholder="Número de Pokédex" min="1" max="9999">
+    <select id="tipo">
+    <option value="">Selecione o tipo do Pokémon</option>
+    <option value="Água">Água</option>
+    <option value="Dragão">Dragão</option>
+    <option value="Elétrico">Elétrico</option>
+    <option value="Fada">Fada</option>
+    <option value="Fantasma">Fantasma</option>
+    <option value="Fogo">Fogo</option>
+    <option value="Gelo">Gelo</option>
+    <option value="Grama">Grama</option>
+    <option value="Inseto">Inseto</option>
+    <option value="Lutador">Lutador</option>
+    <option value="Metálico">Metálico</option>
+    <option value="Normal">Normal</option>
+    <option value="Noturno">Noturno</option>
+    <option value="Pedra">Pedra</option>
+    <option value="Psíquico">Psíquico</option>
+    <option value="Sombrio">Sombrio</option>
+    <option value="Terrestre">Terrestre</option>
+    <option value="Venenoso">Venenoso</option>
+    <option value="Voador">Voador</option>
+    </select>
+    <select id="tipo2">
+    <option value="">Segundo tipo (caso tenha)</option>
+    <option value="Água">Água</option>
+    <option value="Dragão">Dragão</option>
+    <option value="Elétrico">Elétrico</option>
+    <option value="Fada">Fada</option>
+    <option value="Fantasma">Fantasma</option>
+    <option value="Fogo">Fogo</option>
+    <option value="Gelo">Gelo</option>
+    <option value="Grama">Grama</option>
+    <option value="Inseto">Inseto</option>
+    <option value="Lutador">Lutador</option>
+    <option value="Metálico">Metálico</option>
+    <option value="Normal">Normal</option>
+    <option value="Noturno">Noturno</option>
+    <option value="Pedra">Pedra</option>
+    <option value="Psíquico">Psíquico</option>
+    <option value="Sombrio">Sombrio</option>
+    <option value="Terrestre">Terrestre</option>
+    <option value="Venenoso">Venenoso</option>
+    <option value="Voador">Voador</option>
+    </select>
+    <select id="geracao">
+       <option value="">Selecione a geração do Pokémon</option>
+       <option class="gen1" value="1">Geração I</option>
+       <option class="gen2" value="2">Geração II</option>
+       <option class="gen3" value="3">Geração III</option>
+       <option class="gen4" value="4">Geração IV</option>
+       <option class="gen5" value="5">Geração V</option>
+       <option class="gen6" value="6">Geração VI</option>
+       <option class="gen7" value="7">Geração VII</option>
+       <option class="gen8" value="8">Geração VIII</option>
+       <option class="gen9" value="9">Geração IX</option>
+   </select>
+
+
+    <input type="file" id="inputImagem" accept="image/*">
+  
+  
+    <select id="sexo">
+    <option value="">Selecione o gênero do Pokémon</option>
+    <option value="Macho">♂ Macho</option>
+    <option value="Fêmea">♀ Fêmea</option>
+   </select>
+
+
+
+   <button id="btnAdicionar" onclick="addPokemon()">Adicionar</button>
+
+
+
+
+  </div>
+    
+     <p class="jump"> <b>Ir para</b> 
+     <a href="#gen1">Geração I</a>
+     <a href="#gen2">Geração II</a>
+     <a href="#gen3">Geração III</a>
+     <a href="#gen4">Geração IV</a>
+     <a href="#gen5">Geração V</a>
+     <a href="#gen6">Geração VI</a>
+     <a href="#gen7">Geração VII</a>
+     <a href="#gen8">Geração VIII</a>
+     <a href="#gen9">Geração IX</a>
+     </p>
+
+
+     <div id="gen1">
+
+      <h1>Geração I</h1>
+     </div>
+
+     <div id="lista-gen1">
+
+
+     </div>
+
+
+
+     <div id="gen2">
+        <h1>Geração II</h1>
+     </div>
+     <div id="lista-gen2">
+     </div>
+
+
+     <div id="gen3">
+        <h1>Geração III</h1>
+     </div>
+     <div id="lista-gen3">
+     </div>
+
+
+
+     <div id="gen4">
+        <h1>Geração IV</h1>
+     </div>
+     <div id="lista-gen4">
+     </div>
+
+
+     <div id="gen5">
+        <h1>Geração V</h1>
+     </div>
+
+     <div id="lista-gen5">
+     </div>
+     
+
+
+          <div id="gen6">
+                <h1>Geração VI</h1>
+     </div>
+     <div id="lista-gen6">
+     </div>
+
+
+
+      <div id="gen7">
+        <h1>Geração VII</h1>
+      </div>
+     <div id="lista-gen7">
+     </div>
+
+
+     <div id="gen8">
+        <h1>Geração VIII</h1>
+     </div>
+     <div id="lista-gen8">
+     </div>
+
+
+
+     <div id="gen9">
+        <h1>Geração IX</h1>
+     </div>
+     <div id="lista-gen9">
+     </div>
+
+
+     <p class="jump"> <b>Ir para</b> 
+     <a href="#gen1">Geração I</a>
+     <a href="#gen2">Geração II</a>
+     <a href="#gen3">Geração III</a>
+     <a href="#gen4">Geração IV</a>
+     <a href="#gen5">Geração V</a>
+     <a href="#gen6">Geração VI</a>
+     <a href="#gen7">Geração VII</a>
+     <a href="#gen8">Geração VIII</a>
+     <a href="#gen9">Geração IX</a>
+     </p>
+
+
+
+
+        
+     
+
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

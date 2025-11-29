@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 90px;
+    background-color: rgb(61, 61, 61);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-image: url(img/zo6ko26fux871.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 32px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+nav .logo img{
+    
+    width: 100px;
+    display: flexbox;
+    margin-top: 10px;
+}
+
+nav .logo img:hover{
+    filter: drop-shadow(0 0 10px white); 
+    transition: 0.1s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    transition: border-color 0.2s ease;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    padding: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+
+nav ul li a:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+ .container{
+    margin: 50px;
+    margin-top: 25px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    flex-direction: column;
+    
+}
+
+#titulo{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0%;
+    color: black;
+    letter-spacing: 0;
+
+}
+
+#adicao-pokemon{
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #e7f7ff;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;}
+
+
+.jump{
+    text-align: center;
+    background-color: #e7f7ff;
+    border-radius: 5px;
+    padding: 15px;
+    justify-content: space-around;
+    font-size: 15px;
+
+}
+
+.jump a{
+    text-decoration: none;
+    color: rgb(105, 110, 138);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: color 0.2s ease;
+}
+
+.jump a:hover {
+    color: rgb(26, 26, 26);
+}
+
+#gen1, #gen2, #gen3, #gen4, #gen5, #gen6, #gen7, #gen8, #gen9 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: left;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+
+
+
+#lista-gen1, #lista-gen2, #lista-gen3, #lista-gen4, #lista-gen5,#lista-gen6, #lista-gen7, #lista-gen8, #lista-gen9{
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 7px;
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: start;
+}
+
+#adicao-pokemon input, select, input #inputImagem, #btnAdicionar{
+    padding: 7px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(153, 153, 153);
+    color: grey;
+
+}
+
+#pokemon{
+margin: 10px;
+width: 140px;
+box-sizing: border-box;
+display: block;
+align-items: center;
+border-radius: 15px;
+
+}
+
+#pokemon img{
+  object-fit: contain;
+  max-width: 100%;
+  mix-blend-mode: multiply; 
+}
+
+#pokemon a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#pokemon a:hover{
+    text-decoration: underline;
+}
+
+
+#numero{
+    color: #8b8b8b;
+    font-size: 13px;
+}
+
+.nome-pokemon{
+    font-size: 14px;
+}
+
+.itype.Grama{
+    color: #59f194;
+}
+
+.itype.Inseto{
+    color: #59f194;
+}
+
+.itype.Normal{
+    color: #6b6d64;
+}
+
+.itype.Elétrico{
+    color: #e6c81f;
+}
+
+.itype.Psíquico{
+    color: #f10085;
+}
+
+.itype.Fada{
+    color: #ec7eda;
+}
+
+.itype.Sombrio{
+    color: #5a4d3b;
+}
+
+.itype.Veneno{
+    color: #3a003f;
+}
+
+.itype.Dragão{
+    color: #9e0000;
+}
+
+.itype.Fogo{
+    color: #ff0808;
+}
+
+.itype.Gelo{
+    color: #64c1ff;
+}
+
+.itype.Fantasma{
+    color: #420a68;
+}
+
+.itype.Noturno{
+    color: #6e196e;
+}
+
+.itype.Metálico{
+    color: #6a6599;
+}
+
+.itype.Terrestre{
+    color: #6d420a;
+}
+
+.itype.Pedra{
+    color: #3d2f1c;
+}
+.itype.Água{
+    color: #749fcf;
+}
+
+.itype.Voador{
+    color: #62b5c4;
+}
+
+.itype.Lutador{
+    color: #91040b;
+}

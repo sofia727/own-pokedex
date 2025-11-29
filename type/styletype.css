@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 90px;
+    background-color: rgb(61, 61, 61);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-image: url(../img/zo6ko26fux871.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 32px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+nav .logo img{
+    
+    width: 100px;
+    display: flexbox;
+    margin-top: 10px;
+}
+
+nav .logo img:hover{
+    filter: drop-shadow(0 0 10px white); 
+    transition: 0.1s ease;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+
+
+
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    transition: border-color 0.2s ease;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    padding: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+
+nav ul li a:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+ .container{
+    margin: 65px;
+    margin-top: 25px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    flex-direction: column;
+    
+}
+
+
+#titulo{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo .tipo{
+    color: #a8a8a8;
+    margin-left: 8px;
+}
+#titulo .itype.psiquico, #titulo .itype.água, #titulo .itypedragão, #titulo .itype.eletrico, #titulo .itype.fada, #titulo .itype.fantasma, #titulo .itype.fogo, #titulo .itype.gelo, #titulo .itype.grama, #titulo .itype.inseto, #titulo .itype.lutador, #titulo .itype.metalico, #titulo .itype.normal,#titulo .itype.noturno, #titulo .itype.pedra, #titulo .itype.psiquico, #titulo .itype.sombrio, #titulo .itype.terrestre, #titulo .itype.veneno, #titulo .itype.voador{
+  background: none;
+}
+
+
+
+.texto-pokedex{
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #535353;
+}
+
+
+table{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    border-spacing: 50px 0;
+
+}
+
+table thead{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#container-pro-cons {
+    margin: 40px 0;
+}
+
+#container-pro-cons h1{
+font-size: 35px;
+margin-top: 20px;
+}
+
+#container-pro-cons i{
+color: #979797;
+font-weight: lighter;
+}
+
+#container-pro-cons a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+.t1{
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+.jump{
+    text-align: center;
+    background-color: #e7f7ff;
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.jump a{
+    text-decoration: none;
+    color: rgb(73, 96, 223);
+    padding: 20px;
+    margin: 10px;
+    transition: color 0.2s ease;
+}
+
+.jump b{
+    margin: 20px;
+}
+
+.jump a:hover {
+    color: rgb(26, 26, 26);
+}
+
+
+.itype.grama{
+    color: #19723b;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.inseto{
+    color: #7b9464;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.normal{
+    color: #6b6d64;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.eletrico{
+    color: #e6c81f;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.psiquico{
+    color: #f10085;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.fada{
+    color: #ec7eda;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.sombrio{
+    color: #5a4d3b;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.veneno{
+    color: #3a003f;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.Dragão{
+    color: #800000;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.fogo{
+    color: #ff0808;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.gelo{
+    color: #64c1ff;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.fantasma{
+    color: #775b8a;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.noturno{
+    color: #6e196e;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.metalico{
+    color: #6a6599;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.terrestre{
+    color: #6d420a;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.pedra{
+    color: #3d2f1c;
+    border-radius: 15px ;
+    padding: 7px;
+}
+.itype.Água{
+    color: #749fcf;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.voador{
+    color: #62b5c4;
+    border-radius: 15px ;
+    padding: 7px;
+}
+
+.itype.lutador{
+    color: #91040b;
+    border-radius: 15px ;
+    padding: 7px;
+}
